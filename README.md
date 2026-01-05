@@ -1,4 +1,4 @@
-Tab auto reloader (Chrome extension) - BW Fork 
+Tab Auto Reloader (Chrome extension) - BW Fork 
 ====================================
 
 ![Screenshot of this extension](./screenshot.png)
@@ -11,13 +11,13 @@ It's currently in testing so beware this is not polished as I would like.
 
 ### Reason for the fork
 
-I was looking for simple automatic tab reloader based on a timed interval without malware. I wanted to be sure of it being malware free by looking at the source code.  I came across [crx-reload-tab on Reddit](https://www.reddit.com/r/chrome/comments/i1l78e/are_there_any_legit_auto_refresh_extensions_in/) but in 2026 the chrome extension web store said it no longer met the standards and was removed from the store.
+I was looking for simple automatic tab reloader based on a timed interval without malware. I wanted to be sure of it being malware free by looking at the source code.  I came across [crx-reload-tab from a Reddit post](https://www.reddit.com/r/chrome/comments/i1l78e/are_there_any_legit_auto_refresh_extensions_in/) but in 2026 the Chrome Web Store said it no longer met the standards and was removed from the store.
 
 Looking into the issue, this browser plugin was based on Chrome extension manifest version 2.  In January 2026 when I was looking at this extension, manifest version 2 has been deprecated in Chrome browsers, chrome no longer allows extensions with manifest version 2 to be installed from the web store or in developer mode.
 
 ### Functional Changes 
 
-This fork changes the plugin to manifest version 3.  This did changed the browser API the code was expecting so it's been re-architected.  Though I never used the original version I believe this version is functionally similar with the exception of allowing the amounts of time between refreshes for under 1 minute. Understandably for the original developers purposes this was unacceptable, however for my purposes its fine.
+This fork changes the plugin to manifest version 3.  This changed the browser API the code was expecting so it's been re-architected.  Though I never used the original version I believe this version is functionally similar with the exception of allowing the amounts of time between refreshes for under 1 minute. Understandably for the original developers purposes this was unacceptable, however for my purposes its fine.
 
 Tech Note: **Persistent background page** implementation has been removed. That functionality is deprecated in chrome, instead this fork uses the Alarms API, which only allows 1 minute minimum refresh.
 
@@ -29,7 +29,7 @@ Since the original extension appears to be no longer under development and the i
 
 ### Installation
 
-As of now this version / fork is not available in the Chrome Web Store.  The prior fork is no longer installable on Modern Chrome browsers. I also do not have releases either, installation is currently manual.
+As of now this version / fork is not available in the Chrome Web Store.  The prior fork is no longer installable on modern Chrome browsers. I also do not have GitHub releases setup yet, installation is currently manual using the following instructions.
 
 1. Obtain the code base:
    1. Via git:
@@ -50,21 +50,21 @@ As of now this version / fork is not available in the Chrome Web Store.  The pri
 1. Open your chrome based web browser **Manage Extensions** settings and enable **Developer mode**:
     1. Open your main menu, Depending on the the Chromium variant, platform and UI styling of the week this might be the hamburger (three horizontal lines) or 3 vertical dots or possibly something else.
     1. Chose `Extensions -> Manage Extensions`, a settings tab should open up.
-        1. You could also access this via links like:
-            * [chrome://extensions/](chrome://extensions/)
-            * [brave://extensions/](brave://extensions/)
+        1. You could also access this via links in your URL bar, such as:
+            * `chrome://extensions/`
+            * `brave://extensions/`
     1. Toggle on "Developer mode" in the upper right corner
 1. Open a file manager and Drag the `bw-reload-tab.zip` file (produced from the command above) into the middle of the Manage Extensions settings tab.
 1. Select or open the tab you want to auto reload with (tabs are configured individually)
 1. Open the extension menu, which is a puzzle piece icon, usually to the right of the address bar.
     1. (Optional) Pin the "Tab Auto Reloader", if you want quicker access (you will not have to click the puzzle piece in the future to access it this way)
-    1. Select "Tab Auto Reloader" (or the new timer icon if pinned)
+    1. Select "Tab Auto Reloader" (or the new timer icon, if pinned)
     1. Select or type the amount of time you need between reloads.
 1. NOTE: currently the refresh settings do not survive browser restarts
 
 ### Commitment to: Free, Open and Malware Free Extensions
 
-As was likely the original projects intentions, this is malware free as far as I can tell. Malware is a big problem with these browser extensions.  Often times people just click allow access to these extensions to allow the extensions to work and now the extensions have full access to read and modify everything in the browser.  Often times the developer may start out with good or at least neutral intentions but money comes into play and malware goes in. With automatic updates in the chrome web store you have the malware running on your browser: stealing data, pulling down extra ads, changing links, etc and you probably forgotten about giving full permissions to the extension back when the developer was trustworthy.
+As was likely the original projects intentions, this is malware free as far as I can tell. Malware is a big problem with these browser extensions.  Often times people just click allow access to these extensions to allow the extensions to work and now the extensions have full access to read and modify everything in the browser.  Often times the developer may start out with good or at least neutral intentions but money comes into play and malware goes in. With malware going in and automatic updates in the chrome web store you have the malware running on your browser: stealing data, pulling down extra ads, changing links, etc and you probably forgotten about giving full permissions to the extension back when the developer was trustworthy.
 
 As such this extensions does not ask for permissions to view and modify webpages. If it does you have gotten a modified version. Also since it's not currently in the Chrome Web store, there are no automatic updates (if I add it to the web store in the future, you would have to manually add it from the web store first).  All the source code when downloaded from here is viewable and you can see is sourced from here.
 
