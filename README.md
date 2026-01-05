@@ -1,7 +1,7 @@
 Tab auto reloader (Chrome extension) - BW Fork 
 ====================================
 
-[![Screenshot of this extension](./screenshot.png)]
+![Screenshot of this extension](./screenshot.png)
 
 ## About this fork
 
