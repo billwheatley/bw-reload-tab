@@ -56,16 +56,7 @@ input.preset_button.active {
 
 <section id="section_presets">
 	<div class="preset_row">
-		<input type="button" class="preset_button" data-seconds="5" value="5s">
-		<input type="button" class="preset_button" data-seconds="10" value="10s">
-		<input type="button" class="preset_button" data-seconds="15" value="15s">
-		<input type="button" class="preset_button" data-seconds="20" value="20s">
-		<input type="button" class="preset_button" data-seconds="30" value="30s">
-		<input type="button" class="preset_button" data-seconds="45" value="45s">
-		<input type="button" class="preset_button" data-seconds="60" value="60s">
-	</div>
-	<div class="preset_row">
-		<input type="button" class="preset_button" data-seconds="120" value="2min">
+		<input type="button" class="preset_button" data-seconds="60" value="1min">
 		<input type="button" class="preset_button" data-seconds="300" value="5min">
 		<input type="button" class="preset_button" data-seconds="600" value="10min">
 		<input type="button" class="preset_button" data-seconds="900" value="15min">
@@ -88,8 +79,7 @@ input.preset_button.active {
 	<form id="custom_form" class="custom_row">
 		<input type="number" min="0"  max="30" step="1" autocomplete="off" value="0" name="days"    id="custom_days"   > days,
 		<input type="number" min="-1" max="24" step="1" autocomplete="off" value="0" name="hours"   id="custom_hours"  > hours,
-		<input type="number" min="-1" max="60" step="1" autocomplete="off" value="0" name="minutes" id="custom_minutes"> minutes,
-		<input type="number" min="-1" max="60" step="1" autocomplete="off" value="0" name="seconds" id="custom_seconds"> seconds
+		<input type="number" min="-1" max="60" step="1" autocomplete="off" value="0" name="minutes" id="custom_minutes"> minutes
 		<input type="submit" value="Apply">
 	</form>
 </section>

@@ -1,7 +1,8 @@
 #!/bin/sh
 
 rm -f crx-reload-tab.zip
-zip -9Xr crx-reload-tab.zip \
+rm -f bw-reload-tab.zip
+zip -9Xr bw-reload-tab.zip \
 	background.js \
 	icon128.png \
 	icon16.png \
