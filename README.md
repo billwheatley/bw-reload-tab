@@ -7,7 +7,7 @@ Tab Auto Reloader (Chrome extension) - BW Fork
 
 This is a fork of [denilsonsa/crx-reload-tab](https://github.com/denilsonsa/crx-reload-tab)
 
-It's currently in testing so beware this is not polished as I would like.
+It's faily new but seems to be functioning well but does have the same [icon badge issue](#icon-badge-and-chrome-event-listeners) as the orginal
 
 ### Reason for the fork
 
