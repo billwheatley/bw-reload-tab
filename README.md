@@ -7,7 +7,7 @@ Tab Auto Reloader (Chrome extension) - BW Fork
 
 This is a fork of [denilsonsa/crx-reload-tab](https://github.com/denilsonsa/crx-reload-tab)
 
-It's faily new but seems to be functioning well at this point, check the current [issues](./issues)
+It's faily new but seems to be functioning well at this point, check the current [issues][issues] for the latest
 
 ### Reason for the fork
 
@@ -38,7 +38,7 @@ As of now this version / fork is not available in the Chrome Web Store.  The pri
        git clone https://github.com/billwheatley/bw-reload-tab.git
        ```
 
-   1. Via zip file:
+   1. OR via zip file:
        1. Download the Git Hub Repo [zip file](https://github.com/billwheatley/bw-reload-tab/archive/refs/heads/master.zip)
        1. Unzip in a local directory
 1. From your downloaded codebase run:
@@ -90,3 +90,4 @@ markroth8][stopwatch] and [Reload icon by mlampret][reload].
 [cws]: https://chrome.google.com/webstore/detail/knnahnemielbnanghaphjgheamgcjjcb
 [reload]: https://openclipart.org/detail/171074/reload-icon
 [stopwatch]: https://openclipart.org/detail/173421/stopwatch
+[issues]: https://github.com/billwheatley/bw-reload-tab/issues
