@@ -7,7 +7,7 @@ Tab Auto Reloader (Chrome extension) - BW Fork
 
 This is a fork of [denilsonsa/crx-reload-tab](https://github.com/denilsonsa/crx-reload-tab)
 
-It's faily new but seems to be functioning well but does have the same [icon badge issue](#icon-badge-and-chrome-event-listeners) as the orginal
+It's faily new but seems to be functioning well at this point, check the current [issues](./issues)
 
 ### Reason for the fork
 
@@ -86,29 +86,7 @@ Features:
 The icon is a remix of public-domain cliparts [stopwatch by
 markroth8][stopwatch] and [Reload icon by mlampret][reload].
 
-Technical stuff
----------------
-
-### Icon badge and Chrome event listeners
-
-The small text below the icon is called [badge][]. When the [badge text is
-set][setBadgeText] to a single tab, the badge gets reset whenever the tab loads
-another page (or reloads the same page).
-
-For that reason, the extension adds a listener to
-[`chrome.tabs.onUpdated`][onUpdated] to restore the badge text after reloading.
-
-In addition, the extension adds a listener to
-[`chrome.tabs.onRemoved`][onRemoved] to clear the reload whenever a tab gets
-closed.
-
-The extension is smart enough to remove the listeners if no tab is being
-auto-reloaded.
 
 [cws]: https://chrome.google.com/webstore/detail/knnahnemielbnanghaphjgheamgcjjcb
 [reload]: https://openclipart.org/detail/171074/reload-icon
 [stopwatch]: https://openclipart.org/detail/173421/stopwatch
-[badge]: https://developer.chrome.com/extensions/browserAction#badge
-[setBadgeText]: https://developer.chrome.com/extensions/browserAction#method-setBadgeText
-[onUpdated]: https://developer.chrome.com/extensions/tabs#event-onUpdated
-[onRemoved]: https://developer.chrome.com/extensions/tabs#event-onRemoved
